@@ -1,0 +1,142 @@
+@font-face {
+    font-family: KyivType Sans Med;
+    src: url(/fonts/kyivtype-sans-medium.ttf) format('truetype');
+}   
+
+@font-face {
+    font-family: KyivType Sans regular;
+    src: url(/fonts/KyivType-Sans-Regular-.ttf) format('truetype');
+}
+@font-face {
+    font-family: KyivType Sans l;
+    src: url(/fonts/kyivtype-sans-light.ttf) format('truetype');
+}
+/* ------------------------------------------------------------------ */
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: #292929;
+    font-family: KyivType Sans regular , KyivType Sans l;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.container{
+    background-color: #1E1E1E;
+    height: 618px;
+    width: 426px;
+    border-radius: 10px;
+    color: white;
+}
+
+.container .header{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.container .header h2{
+    text-align: center;
+    font-weight: 100;
+    font-size: 20px;
+    color: #9E9E9E;
+}
+
+.container .form{
+    
+   padding: 30px 40px;
+}
+
+.container .form .form-control{
+
+    position: relative;
+    margin-top: 10px;
+    padding-bottom:15px ;
+    margin-right: 1px;
+}
+
+
+.container .form .form-control label{
+
+    display: inline-block;
+    display: flex;
+    color: #9E9E9E;
+    font-size: 14px;
+}
+
+
+.container .form .form-control input {
+
+    width: 100%;
+    height: 25px;
+    margin-top: 5px;
+    background-color: #242424;
+    border: none;
+    border-radius: 3px;
+
+}
+/* check mark et error marks + error message part */
+.container .form .form-control i {
+    
+    position: absolute;
+    top: 30px;
+    right:5px;
+    visibility: hidden;
+}
+
+.container .form .form-control small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #FF7777;
+    font-size: 10px;
+    visibility: hidden;
+}
+.container .form .account-set-text {
+    text-align: center;
+
+}
+/* LOG IN  */
+.container .form .account-set-text .text {
+
+    font-size: 10px;
+    color: #9E9E9E;
+}
+/* LOGIN BUTTON  */
+.container .form .login-btn{
+    text-align: center;
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+}
+.container .form .login-btn .login {
+    border-radius: 99px;
+    background-color: #5F9447;
+    color: #AAFF83;
+    border: none;
+    font-size: 10px;
+    font-family: KyivType Sans l;
+}
+
+
+.container .form #submit {
+
+    margin-top: 50px;
+    width: 100%;
+    height: 37px;
+    border-radius: 6px;
+    border: none;
+    font-family: KyivType Sans regular;
+    font-size: 15px;
+    background-color: #6D72EB;
+    color: white;
+    
+}
+.container .form #submit:hover{
+    background-color: #1E1E1E;
+    color: #9E9E9E;
+    transition: .3s ease;
+}
